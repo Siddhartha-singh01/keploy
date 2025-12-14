@@ -34,7 +34,7 @@ func NewHooks(logger *zap.Logger, cfg *config.Config) *Hooks {
 		sess:         agent.NewSessions(),
 		m:            sync.Mutex{},
 		proxyIP4:     "127.0.0.1",
-		proxyIP6:     [4]uint32{0000, 0000, 0000, 0001},
+		proxyIP6:     [4]uint32{0000, 0000, 0000, 0001}, 
 		proxyPort:    cfg.ProxyPort,
 		dnsPort:      cfg.DNSPort,
 		conf:         cfg,
